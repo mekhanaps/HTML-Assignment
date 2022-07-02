@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lists</title>
+    <style>
+        body {
+            background-color: #121212;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .button {
+            background: none;
+            color: #184c4e;
+            border: 2px solid;
+            padding: 1em 2em;
+            font-size: 1em;
+            transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+            text-align: center;
+            /* display:none; */
+        }
+
+        .button:hover {
+            border-color: #349296;
+            color: #349296;
+            box-shadow: 0 0.5em 0.5em -0.4em #349296;
+            transform: translateY(-0.25em);
+            cursor: pointer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 50px 50px;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: #349296; padding: 1em;">Lists Assignment</h1>
+    <div style="height: 100px;"></div>
+    <div class="grid-container">
+        <h3><a href="lists/shopping.html">
+                <div class="button">Shopping List</div>
+            </a></h3>
+        <h3><a href="lists/todos.html">
+                <div class="button">Todo's List</div>
+            </a></h3>
+        <h3><a href="lists/holiday.html">
+                <div class="button">Holiday List</div>
+            </a></h3>
+        <h3><a href="lists/movie.html">
+                <div class="button">Movies List</div>
+            </a></h3>
+    </div>
+    <h3><a href="../assignments.html">
+            <div class="button">Back to Assignments</div>
+        </a></h3>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Holiday List</title>
+    <style>
+        body {
+            background-color: #121212;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .button {
+            background: none;
+            color: #184c4e;
+            border: 2px solid;
+            padding: 1em 2em;
+            font-size: 1em;
+            transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+            text-align: center;
+            /* display:none; */
+        }
+
+        .button:hover {
+            border-color: #349296;
+            color: #349296;
+            box-shadow: 0 0.5em 0.5em -0.4em #349296;
+            transform: translateY(-0.25em);
+            cursor: pointer;
+        }
+
+        .box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 25px;
+            font-size: 30px;
+            width: 50%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transform: scale(0.9);
+            /* display: none; */
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: #349296; padding: 1em;">Unordered List inside of ordered List of Places to visit</h1>
+    <div class="box">
+        <ol>
+            <li>Japan
+                <ul>
+                    <li>Tokyo</li>
+                    <li>Akihabara</li>
+                    <li>Kyoto</li>
+                </ul>
+            </li>
+            <li>USA
+                <ul>
+                    <li>Newyork</li>
+                    <li>Chicago</li>
+                    <li>L.A.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <h3><a href="../lists.html">
+            <div class="button">Back to Lists</div>
+        </a></h3>
+</body>
+
+</html>
